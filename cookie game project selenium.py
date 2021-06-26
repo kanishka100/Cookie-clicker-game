@@ -3,7 +3,6 @@ import time
 from selenium import webdriver
 from webdriver_manager.chrome import ChromeDriverManager
 
-# path = "C:\development\chromedriver_win32\chromedriver.exe"
 driver = webdriver.Chrome(executable_path=ChromeDriverManager().install())
 driver.get("https://orteil.dashnet.org/experiments/cookie/")
 time_to_check = time.time() + 5
